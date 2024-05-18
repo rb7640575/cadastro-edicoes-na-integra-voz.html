@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Edições - A Voz do Brasil</title>
+</head>
+<body>
+    <h1>Cadastro de Edições - A Voz do Brasil</h1>
+
+    <form action="processar_edicao.php" method="post">
+        <label for="data_edicao">Data da Edição:</label>
+        <input type="date" id="data_edicao" name="data_edicao" required>
+
+        <label for="hora_edicao">Hora da Edição:</label>
+        <input type="time" id="hora_edicao" name="hora_edicao" required>
+
+        <label for="titulo_edicao">Título da Edição:</label>
+        <input type="text" id="titulo_edicao" name="titulo_edicao" size="50" maxlength="255" required>
+
+        <label for="arquivo_edicao">Arquivo de Áudio:</label>
+        <input type="file" id="arquivo_edicao" name="arquivo_edicao" required>
+
+        <label for="descricao_edicao">Descrição da Edição:</label>
+        <textarea id="descricao_edicao" name="descricao_edicao" rows="5" cols="50"></textarea>
+
+        <button type="submit">Cadastrar Edição</button>
+    </form>
+
+    <p>**Observação:** Este formulário não inclui CSS ou JavaScript para formatação e interatividade. A implementação visual e funcional dependerá de código adicional.</p>
+</body>
+</html>
